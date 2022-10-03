@@ -76,6 +76,7 @@ android_app {
         "android-common",
         "android-common-framesequence",
         "com.android.vcard",
+        "com.google.android.material_material_md3",
         "guava",
         "libphonenumber",
     ],

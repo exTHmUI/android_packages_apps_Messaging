@@ -16,6 +16,7 @@
 -->
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
@@ -35,18 +36,20 @@
         android:visibility="gone"
         android:layout_marginBottom="@dimen/conversation_list_empty_text_bottom_margin" />
 
-    <ImageView
-        style="@style/ConversationListFragmentStartNewButtonStyle"
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        style="@style/Widget.Material3.ExtendedFloatingActionButton.Primary"
         android:id="@+id/start_new_conversation_button"
-        android:layout_width="@dimen/fab_size"
-        android:layout_height="@dimen/fab_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
+        android:text="@string/start_new_conversation"
+        android:textColor="@color/netrual_color"
+        android:backgroundTint="@color/system_accent"
         android:layout_marginBottom="@dimen/fab_bottom_margin"
-        android:paddingBottom="@dimen/fab_padding_bottom"
-        android:background="@drawable/fab_new_message_bg"
+        android:layout_marginEnd="@dimen/fab_left_right_margin"
         android:elevation="@dimen/fab_elevation"
-        android:scaleType="center"
-        android:src="@drawable/ic_add_white"
+        app:icon="@drawable/ic_twotone_sms_24"
+        app:iconTint="@color/netrual_color"
         android:stateListAnimator="@animator/fab_anim"
         android:contentDescription="@string/start_new_conversation"/>
 
