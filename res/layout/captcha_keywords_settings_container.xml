@@ -23,6 +23,7 @@
         android:paddingHorizontal="@dimen/captcha_list_padding_horizontal"
         android:paddingVertical="@dimen/captcha_list_padding_vertical"
         android:text="@string/captcha_keywords_header"
+        android:textColor="@color/people_and_options_header_text"
         android:textSize="13sp" />
 
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
