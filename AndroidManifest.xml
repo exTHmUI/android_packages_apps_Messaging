@@ -490,6 +490,8 @@
             </intent-filter>
         </receiver>
 
+        <receiver android:name=".receiver.CaptchaCodeReceiver" android:exported="false" />
+
         <!-- Widget that displays the conversation list -->
         <receiver android:name=".widget.BugleWidgetProvider"
                 android:exported="true"
