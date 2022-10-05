@@ -241,7 +241,7 @@
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="user"
             android:label="@string/people_and_options_activity_title"
-            android:theme="@style/BugleTheme"
+            android:theme="@style/BugleTheme.SettingsActivity"
             android:parentActivityName="com.android.messaging.ui.conversation.ConversationActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
