@@ -15,7 +15,6 @@
  */
 package com.android.messaging.ui.contact;
 
-import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.res.Resources;
@@ -25,10 +24,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AlertDialog;
+
 import com.android.messaging.R;
 import com.android.messaging.ui.ContactIconView;
 import com.android.messaging.ui.UIIntents;
 import com.android.messaging.util.AccessibilityUtil;
+
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 public class AddContactsConfirmationDialog implements DialogInterface.OnClickListener {
     private final Context mContext;
@@ -45,7 +48,7 @@ public class AddContactsConfirmationDialog implements DialogInterface.OnClickLis
     public void show() {
         final int confirmAddContactStringId = R.string.add_contact_confirmation;
         final int cancelStringId = android.R.string.cancel;
-        final AlertDialog alertDialog = new AlertDialog.Builder(mContext)
+        final AlertDialog alertDialog = new MaterialAlertDialogBuilder(mContext)
         .setTitle(R.string.add_contact_confirmation_dialog_title)
         .setView(createBodyView())
         .setPositiveButton(confirmAddContactStringId, this)

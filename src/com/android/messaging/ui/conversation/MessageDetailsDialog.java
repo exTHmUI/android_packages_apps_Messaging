@@ -40,6 +40,7 @@ import com.android.messaging.util.DebugUtils;
 import com.android.messaging.util.OsUtil;
 import com.android.messaging.util.PhoneUtils;
 import com.android.messaging.util.SafeAsyncTask;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import java.util.List;
 
@@ -86,7 +87,7 @@ public class MessageDetailsDialog {
 
     private static void showDialog(final Context context, String messageDetails) {
         if (!TextUtils.isEmpty(messageDetails)) {
-            new AlertDialog.Builder(context)
+            new MaterialAlertDialogBuilder(context)
                     .setTitle(R.string.message_details_title)
                     .setMessage(messageDetails)
                     .setCancelable(true)

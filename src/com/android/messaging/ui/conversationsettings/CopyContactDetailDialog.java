@@ -27,6 +27,8 @@ import android.widget.TextView;
 import com.android.messaging.R;
 import com.android.messaging.util.AccessibilityUtil;
 
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
+
 public class CopyContactDetailDialog implements DialogInterface.OnClickListener {
 
     private final Context mContext;
@@ -38,7 +40,7 @@ public class CopyContactDetailDialog implements DialogInterface.OnClickListener 
     }
 
     public void show() {
-        new AlertDialog.Builder(mContext)
+        new MaterialAlertDialogBuilder(mContext)
                 .setView(createBodyView())
                 .setTitle(R.string.copy_to_clipboard_dialog_title)
                 .setPositiveButton(R.string.copy_to_clipboard, this)

@@ -35,6 +35,7 @@ import com.android.messaging.R;
 import com.android.messaging.datamodel.action.ReceiveSmsMessageAction;
 import com.android.messaging.datamodel.BugleNotifications;
 import com.android.messaging.util.Assert;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import java.util.ArrayList;
 
