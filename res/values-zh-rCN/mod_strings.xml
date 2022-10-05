@@ -25,6 +25,7 @@
     <!-- Notification channel -->
     <string name="notification_channel_messages_title">短信通知通道</string>
 
+    <string name="mediapicker_contact_title">选择一个联系人</string>
     <string name="contact_picker_hint_text">点击打开本机联系人列表</string>
 
     <!-- Mark message as read -->
