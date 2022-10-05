@@ -36,4 +36,8 @@
     <color name="compose_notification_bar_background">@color/netrual_color</color>
 
     <color name="contact_picker_button_text_color">@color/system_accent</color>
+
+    <color name="people_and_options_header_text">@android:color/white</color>
+
+    <color name="participant_list_text_primary">@android:color/white</color>
 </resources>
