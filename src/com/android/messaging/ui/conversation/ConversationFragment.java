@@ -106,6 +106,7 @@ import com.android.messaging.util.TextUtil;
 import com.android.messaging.util.UiUtils;
 import com.android.messaging.util.UriUtil;
 import com.google.common.annotations.VisibleForTesting;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import java.io.File;
 import java.util.ArrayList;
