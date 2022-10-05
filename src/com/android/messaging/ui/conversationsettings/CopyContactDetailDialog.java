@@ -41,8 +41,8 @@ public class CopyContactDetailDialog implements DialogInterface.OnClickListener 
 
     public void show() {
         new MaterialAlertDialogBuilder(mContext)
-                .setView(createBodyView())
                 .setTitle(R.string.copy_to_clipboard_dialog_title)
+                .setMessage(mContactDetail)
                 .setPositiveButton(R.string.copy_to_clipboard, this)
                 .show();
     }
@@ -52,17 +52,5 @@ public class CopyContactDetailDialog implements DialogInterface.OnClickListener 
         final ClipboardManager clipboard =
                 (ClipboardManager) mContext.getSystemService(Context.CLIPBOARD_SERVICE);
         clipboard.setPrimaryClip(ClipData.newPlainText(null /* label */, mContactDetail));
-    }
-
-    private View createBodyView() {
-        LayoutInflater inflater = (LayoutInflater) mContext
-                .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        TextView textView = (TextView) inflater.inflate(R.layout.copy_contact_dialog_view, null,
-                false);
-        textView.setText(mContactDetail);
-        final String vocalizedDisplayName = AccessibilityUtil.getVocalizedPhoneNumber(
-                mContext.getResources(), mContactDetail);
-        textView.setContentDescription(vocalizedDisplayName);
-        return textView;
     }
 }
