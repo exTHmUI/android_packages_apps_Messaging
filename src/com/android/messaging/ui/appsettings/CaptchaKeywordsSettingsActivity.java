@@ -99,7 +99,6 @@ public class CaptchaKeywordsSettingsActivity extends BugleActionBarActivity {
             textView.setTextSize(16);
             textView.setGravity(Gravity.CENTER_VERTICAL);
             textView.setPadding(75, 36, 75, 36);
-            textView.setTextColor(Color.BLACK);
             textView.setWidth(1080);
             textView.setMinHeight(156);
             return textView;
