@@ -136,4 +136,14 @@
         <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
     </style>
 
+    <style name="SettingsListItem" parent="TextAppearance.AppCompat.SearchResult.Title">
+        <item name="android:textSize">@dimen/settings_list_text_size</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="SettingsListItemDetail" parent="TextAppearance.AppCompat.SearchResult.Subtitle">
+        <item name="android:textSize">@dimen/settings_list_detail_text_size</item>
+        <item name="android:background">@null</item>
+    </style>
+
 </resources>
