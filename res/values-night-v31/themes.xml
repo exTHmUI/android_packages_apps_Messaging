@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="BugleBaseTheme" parent="Theme.Material3.DayNight" />
+
+    <!-- Base application theme. -->
+    <style name="BugleTheme" parent="BugleBaseTheme">
+        <item name="colorPrimary">@color/system_accent</item>
+        <item name="colorPrimaryDark">@color/system_accent_darker</item>
+        <item name="colorSecondary">@color/system_accent</item>
+
+        <item name="colorPrimaryVariant">@color/system_accent</item>
+        <item name="colorSecondaryVariant">@color/system_accent_2</item>
+        <item name="scrimBackground">@color/netrual_color</item>
+
+        <item name="colorSurface">@color/netrual_color</item>
+        <item name="colorSecondaryContainer">@color/system_accent_soft</item>
+
+        <item name="android:colorBackground">@color/app_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="actionBarStyle">@style/BugleActionBar</item>
+        <item name="android:textColorHighlight">@color/text_highlight_color</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_arrow_back</item>
+        <item name="android:actionOverflowButtonStyle">@style/CustomActionBarMenuButton</item>
+    </style>
+
+    <!-- Action Bar Theme -->
+    <style name="BugleActionBar" parent="@style/Widget.Material3.ActionBar.Solid">
+        <item name="android:background">@color/system_accent</item>
+        <item name="height">@dimen/action_bar_height</item>
+        <item name="displayOptions">showTitle</item>
+        <item name="titleTextStyle">@style/BugleActionBarTitleTextStyle</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="CustomActionBarMenuButton" parent="Widget.Material3.PopupMenu.Overflow">
+        <item name="overlapAnchor">true</item>
+        <item name="android:src">@drawable/ic_twotone_menu_24</item>
+        <item name="android:paddingRight">12dp</item>
+    </style>
+
+    <style name="BugleActionBarTitleTextStyle" parent="@style/TextAppearance.Material3.ActionBar.Title">
+        <item name="android:textColor">@color/action_bar_title_text_color</item>
+        <item name="android:textSize">@dimen/action_bar_text_size</item>
+        <item name="android:lines">1</item>
+    </style>
+
+</resources>

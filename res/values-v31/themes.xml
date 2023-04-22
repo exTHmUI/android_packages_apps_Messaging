@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="BugleBaseTheme" parent="Theme.Material3.DynamicColors.Light" />
+    <style name="BugleBaseTheme" parent="Theme.Material3.DayNight" />
 
     <!-- Base application theme. -->
     <style name="BugleTheme" parent="BugleBaseTheme">
-        <item name="colorPrimary">@color/netrual_color</item>
-        <item name="colorPrimaryDark">@color/netrual_color_2</item>
-        <item name="colorAccent">@color/system_accent</item>
+        <item name="colorPrimary">@color/system_accent</item>
+        <item name="colorPrimaryDark">@color/system_accent_darker</item>
+        <item name="colorSecondary">@color/system_accent</item>
+
+        <item name="colorPrimaryVariant">@color/system_accent</item>
+        <item name="colorSecondaryVariant">@color/system_accent_2</item>
+        <item name="scrimBackground">@color/netrual_color</item>
+
+        <item name="colorSurface">@color/netrual_color</item>
+        <item name="colorSecondaryContainer">@color/system_accent_soft</item>
+
+        <item name="android:colorBackground">@color/app_background</item>
         <item name="actionBarStyle">@style/BugleActionBar</item>
         <item name="android:textColorHighlight">@color/text_highlight_color</item>
         <item name="android:windowLightStatusBar">true</item>
@@ -61,6 +70,7 @@
 
     <!-- Action Bar Theme -->
     <style name="BugleActionBar" parent="@style/Widget.Material3.ActionBar.Solid">
+        <item name="android:background">@color/system_accent</item>
         <item name="height">@dimen/action_bar_height</item>
         <item name="displayOptions">showTitle</item>
         <item name="titleTextStyle">@style/BugleActionBarTitleTextStyle</item>
